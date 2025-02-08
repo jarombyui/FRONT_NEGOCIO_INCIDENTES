@@ -27,16 +27,16 @@ export const AdminProvider = ({ children }) => {
         }
     }, [users])
 
-    const { data: reports } = useQuery({
-        queryKey: ['reports'],
-        queryFn: reportesAll,
-    })
+    // const { data: reports } = useQuery({
+    //     queryKey: ['reports'],
+    //     queryFn: reportesAll,
+    // })
 
-    useEffect(() => {
-        if (reports) {
-            setReportAll(reports)
-        }
-    }, [reports])
+    // useEffect(() => {
+    //     if (reports) {
+    //         setReportAll(reports)
+    //     }
+    // }, [reports])
 
     const { data: reportUs } = useQuery({
         queryKey: ['reportUs'],
@@ -150,7 +150,7 @@ export const AdminProvider = ({ children }) => {
             createUser,
             reportFrUs,
             userAll,
-            reportAll,
+            // reportAll,
             reportFOne,
             updateStatus,
             delUser,
