@@ -67,9 +67,9 @@ export const InfoUser = () => {
 
                 <div className="flex items-center">
                     <Mail className="text-green-500 mr-7" size={24} />
-                    <div className="flex-grow">
-                        <label className="block text-sm font-medium text-gray-700">Correo Electrónico</label>
-                        <p className="text-lg text-indigo-800">{infoUser.email}</p>
+                    <div className="flex-grow min-w-0">
+                        <label className="block text-sm  font-medium text-gray-700 truncate ">Correo Electrónico</label>
+                        <p className="text-lg text-indigo-800 truncate">{infoUser.email}</p>
                     </div>
                 </div>
 
